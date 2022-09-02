@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\board.o
+./release\stone.o
+./release\Step.o
+./release\SingleGame.o
+./release\zhujiemian.o
+./release\qrc_image.o
+./release\moc_Board.o
+./release\moc_Step.o
+./release\moc_SingleGame.o
+./release\moc_zhujiemian.o
+);

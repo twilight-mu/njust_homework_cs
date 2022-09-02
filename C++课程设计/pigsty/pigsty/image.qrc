@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/beijing.jpg</file>
+        <file>image/Masque_Jupiter - 菊次郎的夏天（纯钢琴）.mp3</file>
+        <file>image/tubiao.jpg</file>
+        <file>image/商金玮 - 欢乐斗地主 (Piano Ver_).mp3</file>
+        <file>image/anniu.jpg</file>
+        <file>image/tongjitubiao.jpg</file>
+    </qresource>
+</RCC>
