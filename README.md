@@ -1,4 +1,4 @@
-<h1 align="center">项目汇总-NJUST-CS</h1>
+<h1 align="center">课程作业汇总-NJUST-CS</h1>
 
 <div align="center">
 
