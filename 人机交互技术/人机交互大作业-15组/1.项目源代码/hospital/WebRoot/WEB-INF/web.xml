@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>LoginController</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>edu.njust.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SignupController</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>edu.njust.controller.SignupController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PersonalinfoController</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>edu.njust.controller.PersonalinfoController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MainController</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>edu.njust.controller.MainController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReplyController</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>edu.njust.controller.ReplyController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckUserController</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>edu.njust.controller.CheckUserController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MessageController</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>edu.njust.controller.MessageController</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignupController</servlet-name>
+    <url-pattern>/SignupController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PersonalinfoController</servlet-name>
+    <url-pattern>/PersonalinfoController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MainController</servlet-name>
+    <url-pattern>/MainController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReplyController</servlet-name>
+    <url-pattern>/ReplyController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckUserController</servlet-name>
+    <url-pattern>/CheckUserController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessageController</servlet-name>
+    <url-pattern>/MessageController</url-pattern>
+  </servlet-mapping>
+
+</web-app>
