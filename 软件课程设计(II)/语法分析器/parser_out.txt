@@ -1,0 +1,12 @@
+NO
+----line information----
+line 3: int b = 2 
+line 4: a = a + 1 ; 
+line 5: } 
+------------------------
+error line: 4
+error value: a
+----expected symbol-----
+;
+-------------------------
+

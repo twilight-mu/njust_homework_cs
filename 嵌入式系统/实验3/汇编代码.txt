@@ -1,0 +1,38 @@
+.global _boot
+.section .boot,"ax"
+
+_boot:
+	ldr r0,=0xF800071C
+	mov r1,#0x00000600
+	str r1,[r0]
+	ldr r0,=0xF80007C8
+	mov r1,#0x00000600
+	str r1,[r0]
+	
+	ldr r0,=0xE000A204
+	mov r1,#0x00000080
+	str r1,[r0]
+	ldr r0,=0xE000A208
+	mov r1,#0x00000080
+	str r1,[r0]
+	
+	ldr r0,=0xE000A244
+	ldr r1,[r0]
+	and r1,r1,#0xFFFBFFFF
+	str r1,[r0]
+	ldr r0,=0xE000A040
+	ldr r2,=0xE000A064
+loop:
+	ldr r1,[r2]
+	and r1,r1,#0x00040000
+	cmp r1,#0x00040000
+	bne loop1
+	ldr r1,[r0]
+	orr r1,r1,#0x00000080
+	str r1,[r0]
+	b loop	
+loop1:
+	ldr r1,[r0]
+	and r1,r1,#0xFFFFFF7F
+	str r1,[r0]
+	b loop

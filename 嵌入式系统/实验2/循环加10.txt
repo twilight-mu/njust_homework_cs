@@ -1,0 +1,50 @@
+.global _boot
+.section .boot,"ax"
+_boot:
+	mov r4,#0
+	mov r3,#0
+loop1:
+	add r3,r3,#1
+	add r4,r4,r3
+	cmp r3,#10
+	bne loop1
+	bl COM_init
+	bl COM_SUB
+	b .
+COM_init:
+	ldr r0,=0xF80007C0
+	mov r1,#0x000026	E0
+	str r1,[r0]
+	ldr r0,=0xF80007C4
+	mov r1,#0x000026E0
+	str r1,[r0]
+	ldr r0,=0xF8000154
+	mov r1,#0x00001402
+	str r1,[r0]
+	ldr r0,=0xE0001000
+	mov r1,#0x00000017
+	str ,r1,[r0]
+	ldr r0,=0xE0001004
+	mov r1,#0x00000020
+	str r1,[r0]
+	ldr r0,=0xE0001018
+	mov r1,#62
+	str r1,[r0]
+	ldr r0,=0xE0001034
+	mov r1,#6
+	str r1,[r0]
+	mov pc,lr
+COM_SUB:
+	ldr r6,=0xE000102C
+	ldr r5,[r6]
+	and r5,r5,#0x10
+	cmp r5,#0x10
+	beq COM_SUB
+	ldr r6,=0xE0001030
+	mov r7,r4
+	str r7,[r6]
+	mov pc,lr
+
+
+
+

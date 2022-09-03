@@ -1,0 +1,43 @@
+(line 1,type,int)
+(line 1,identifier,a)
+(line 1,binary_operation,=)
+(line 1,constant,1)
+(line 1,delimiters,;)
+(line 2,type,int)
+(line 2,identifier,b)
+(line 2,binary_operation,=)
+(line 2,constant,2)
+(line 2,delimiters,;)
+(line 3,keyword,for)
+(line 3,delimiters,()
+(line 3,type,int)
+(line 3,identifier,i)
+(line 3,binary_operation,=)
+(line 3,constant,1)
+(line 3,delimiters,;)
+(line 3,identifier,i)
+(line 3,binary_operation,<)
+(line 3,constant,10)
+(line 3,delimiters,;)
+(line 3,identifier,i)
+(line 3,unary_operation,++)
+(line 3,delimiters,))
+(line 3,delimiters,{)
+(line 3,identifier,a)
+(line 3,binary_operation,=)
+(line 3,identifier,a)
+(line 3,binary_operation,+)
+(line 3,constant,1)
+(line 3,delimiters,;)
+(line 3,delimiters,})
+----------
+keyword::b c e f i r w 
+type::b c d f i s v 
+binary_operation::! % & * + - / < = > ^ | 
+unary_operation::! + - ~ 
+qualifier::c 
+constant::$ - 0 1 2 3 4 5 6 7 8 9 F N T 
+delimiters::( ) , ; [ ] { } 
+identifier::A B C D E F G H I J K L M N O P Q R S T U V W X Y Z _ a b c d e f g h i j k l m n o p q r s t u v w x y z 
+string::" ' 
+error::0 1 2 3 4 5 6 7 8 9 
