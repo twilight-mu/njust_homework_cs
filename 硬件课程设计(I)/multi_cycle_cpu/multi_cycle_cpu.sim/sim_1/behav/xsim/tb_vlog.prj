@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../multi_cycle_cpu.srcs/sources_1/ip/data_ram/sim/data_ram.v" \
+"../../../../multi_cycle_cpu.srcs/sources_1/ip/inst_rom/sim/inst_rom.v" \
+"../../../../multi_cycle_cpu.srcs/sources_1/new/adder.v" \
+"../../../../multi_cycle_cpu.srcs/sources_1/new/alu.v" \
+"../../../../multi_cycle_cpu.srcs/sources_1/new/decode.v" \
+"../../../../multi_cycle_cpu.srcs/sources_1/new/exe.v" \
+"../../../../multi_cycle_cpu.srcs/sources_1/new/fetch.v" \
+"../../../../multi_cycle_cpu.srcs/sources_1/new/mem.v" \
+"../../../../multi_cycle_cpu.srcs/sources_1/new/multi_cycle_cpu.v" \
+"../../../../multi_cycle_cpu.srcs/sources_1/new/regfile.v" \
+"../../../../multi_cycle_cpu.srcs/sources_1/new/wb.v" \
+"../../../../multi_cycle_cpu.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

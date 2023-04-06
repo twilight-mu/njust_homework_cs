@@ -1,0 +1,17 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sim_1/new/testbench.v,1662539796,verilog,,,,testbench,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/ip/data_ram/sim/data_ram.v,1661163330,verilog,,D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/ip/inst_rom/sim/inst_rom.v,,data_ram,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/ip/inst_rom/sim/inst_rom.v,1662541514,verilog,,D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/adder.v,,inst_rom,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/adder.v,1661163081,verilog,,D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/alu.v,,adder,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/alu.v,1661163034,verilog,,D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/decode.v,,alu,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/decode.v,1661254062,verilog,,D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/exe.v,,decode,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/exe.v,1661254125,verilog,,D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/fetch.v,,exe,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/fetch.v,1661256167,verilog,,D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/mem.v,,fetch,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/mem.v,1661254295,verilog,,D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/multi_cycle_cpu.v,,mem,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/multi_cycle_cpu.v,1662602797,verilog,,D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/regfile.v,,multi_cycle_cpu,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/regfile.v,1661163124,verilog,,D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/wb.v,,regfile,,,,,,,,
+D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/wb.v,1661254507,verilog,,D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sim_1/new/testbench.v,,wb,,,,,,,,

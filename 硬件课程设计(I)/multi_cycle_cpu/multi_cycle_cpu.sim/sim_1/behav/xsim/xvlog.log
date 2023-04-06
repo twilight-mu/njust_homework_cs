@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/ip/data_ram/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/ip/inst_rom/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/exe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/multi_cycle_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multi_cycle_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sources_1/new/wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench

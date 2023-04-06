@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Sep  8 16:51:44 2022
+# Process ID: 16192
+# Current directory: D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.runs/synth_1
+# Command line: vivado.exe -log multi_cycle_cpu_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multi_cycle_cpu_display.tcl
+# Log file: D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.runs/synth_1/multi_cycle_cpu_display.vds
+# Journal file: D:/Vivado Install/hardware_design/multi_cycle_cpu/multi_cycle_cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source multi_cycle_cpu_display.tcl -notrace

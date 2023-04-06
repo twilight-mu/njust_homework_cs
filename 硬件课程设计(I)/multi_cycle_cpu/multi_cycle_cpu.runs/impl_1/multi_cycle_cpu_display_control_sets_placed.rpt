@@ -1,0 +1,139 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Sep  8 16:54:02 2022
+| Host         : LAPTOP-TU6VC37R running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file multi_cycle_cpu_display_control_sets_placed.rpt
+| Design       : multi_cycle_cpu_display
+| Device       : xc7a200t
+----------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    61 |
+|    Minimum number of control sets                        |    61 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   106 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    61 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    43 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             142 |           78 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             100 |           44 |
+| Yes          | No                    | No                     |            1399 |          588 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             157 |           56 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|      Clock Signal      |                     Enable Signal                     |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|  lcd_module/clk_2_BUFG |                                                       | lcd_module/lcd_draw_module/draw_block_number1         |                1 |              1 |
+|  clk_IBUF_BUFG         | lcd_module/touch_module/input_value[3]_i_1_n_0        | lcd_module/touch_module/input_value[31]_i_1_n_0       |                2 |              4 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/set_xy_valid_reg_n_0       | lcd_module/lcd_draw_module/draw_block_number1         |                2 |              4 |
+|  cpu_clk               |                                                       |                                                       |                4 |              5 |
+|  lcd_module/clk_2_BUFG |                                                       | lcd_module/lcd_draw_module/display_count_y[4]_i_1_n_0 |                3 |              5 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/init_display_begin_reg_n_0 | lcd_module/lcd_init_module/init_display_begin0        |                4 |              5 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_wr_valid0             | lcd_module/lcd_draw_module/draw_data[4]_i_1_n_0       |                2 |              5 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/display_x_h[4]_i_1_n_0     | lcd_module/lcd_init_module/init_display_begin0        |                2 |              5 |
+|  clk_IBUF_BUFG         |                                                       | lcd_module/touch_module/clk_count0                    |                3 |              6 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_block_end             | lcd_module/lcd_draw_module/draw_block_number0         |                3 |              6 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/display_count_x[7]_i_2_n_0 | lcd_module/lcd_draw_module/display_count_x[7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG         | lcd_module/touch_module/send_byte[0]_i_1_n_0          |                                                       |                2 |              8 |
+|  lcd_module/clk_2_BUFG |                                                       | lcd_module/lcd_draw_module/td_count_y0                |                4 |              9 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/td_count_x[8]_i_2_n_0      | lcd_module/lcd_draw_module/td_count_x[8]_i_1_n_0      |                5 |              9 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_wr_valid0             |                                                       |                4 |             10 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/display_y0                 | lcd_module/lcd_init_module/init_display_begin0        |                4 |             10 |
+|  cpu_clk               |                                                       | cpu/IF_module/SR[0]                                   |                5 |             11 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/sel                        | lcd_module/lcd_init_module/init_rom_pc0               |                5 |             11 |
+|  lcd_module/clk_2_BUFG |                                                       |                                                       |                9 |             18 |
+|  clk_IBUF_BUFG         |                                                       | display_valid0                                        |               11 |             20 |
+|  clk_IBUF_BUFG         |                                                       | lcd_module/touch_module/rst_count0                    |                6 |             22 |
+|  clk_IBUF_BUFG         |                                                       | lcd_module/touch_module/int_o_en_reg_0                |               11 |             26 |
+|  clk_IBUF_BUFG         | lcd_module/touch_module/input_value[31]_i_2_n_0       | lcd_module/touch_module/input_value[31]_i_1_n_0       |                4 |             28 |
+|  cpu_clk               | cpu/IF_module/next_fetch                              | cpu/IF_module/SR[0]                                   |               13 |             30 |
+|  cpu_clk               | cpu/rf_module/rf[5][31]_i_1_n_0                       |                                                       |               16 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[29][31]_i_1_n_0                      |                                                       |               10 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[4][31]_i_1_n_0                       |                                                       |                7 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[6][31]_i_1_n_0                       |                                                       |               21 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[27][31]_i_1_n_0                      |                                                       |               24 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[3][31]_i_1_n_0                       |                                                       |               11 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[17][31]_i_1_n_0                      |                                                       |               14 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[8][31]_i_1_n_0                       |                                                       |               14 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[2][31]_i_1_n_0                       |                                                       |                6 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[10][31]_i_1_n_0                      |                                                       |               12 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[12][31]_i_1_n_0                      |                                                       |               11 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[14][31]_i_1_n_0                      |                                                       |               15 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[15][31]_i_1_n_0                      |                                                       |               19 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[16][31]_i_1_n_0                      |                                                       |               15 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[18][31]_i_1_n_0                      |                                                       |               13 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[19][31]_i_1_n_0                      |                                                       |               28 |             32 |
+|  clk_IBUF_BUFG         | lcd_module/touch_module/input_valid_OBUF              | cpu/IF_module/SR[0]                                   |                8 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[1][31]_i_1_n_0                       |                                                       |               11 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[13][31]_i_1_n_0                      |                                                       |               15 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[20][31]_i_1_n_0                      |                                                       |               11 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[21][31]_i_1_n_0                      |                                                       |               12 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[11][31]_i_1_n_0                      |                                                       |               15 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[22][31]_i_1_n_0                      |                                                       |               11 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[23][31]_i_1_n_0                      |                                                       |               23 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[9][31]_i_1_n_0                       |                                                       |               15 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[24][31]_i_1_n_0                      |                                                       |                8 |             32 |
+|  cpu_clk               | cpu/rf_module/rf                                      |                                                       |               21 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[28][31]_i_1_n_0                      |                                                       |                9 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[26][31]_i_1_n_0                      |                                                       |               10 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[7][31]_i_1_n_0                       |                                                       |               26 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[25][31]_i_1_n_0                      |                                                       |               10 |             32 |
+|  cpu_clk               | cpu/rf_module/rf[30][31]_i_1_n_0                      |                                                       |               12 |             32 |
+|  cpu_clk               | cpu/IF_module/IF_over                                 |                                                       |               16 |             64 |
+|  cpu_clk               | cpu/MEM_module/E[0]                                   |                                                       |               26 |             70 |
+|  cpu_clk               | cpu/EXE_valid                                         |                                                       |               46 |            106 |
+|  clk_IBUF_BUFG         |                                                       |                                                       |               65 |            119 |
+|  cpu_clk               | cpu/ID_valid                                          |                                                       |               49 |            149 |
++------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+
+
