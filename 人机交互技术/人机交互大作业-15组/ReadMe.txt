@@ -1,6 +1,6 @@
 文件夹说明:
 1.项目源代码：
-含有项目源代码，hospital是病人端，hospitalfordoc是医生端，hospitalforadmin是管理员端，hospital.sql是项目所用数据库文件
+含有项目源代码，hospital是用户端，hospitalfordoc是医生端，hospitalforadmin是管理员端，hospital.sql是项目所用数据库文件
 
 2.项目报告&项目说明手册：
 含有项目的完整报告，以及项目说明手册
